@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only Store</title>
+  <link rel="stylesheet" href="style.css">
+  <div class="lightbox" id="lightbox">
+  <span class="close-btn" onclick="closeLightbox()">×</span>
+  <span class="prev-btn" onclick="changeLightbox(-1)">‹</span>
+  <img id="lightbox-img" src="">
+  <span class="next-btn" onclick="changeLightbox(1)">›</span>
+</div>
+
+</head>
+<body>
+
+  <!-- Hero Banner with Animated Gradient -->
+  <header class="hero-text">
+    <h1>Only Store</h1>
+    <p>Best Products at the Best Prices!</p>
+    <a href="#products" class="btn hero-btn">Shop Now</a>
+  </header>
+
+  <!-- Category Buttons -->
+  <div class="categories">
+    <button class="cat-btn active" onclick="showCategory('all', this)">All</button>
+    <button class="cat-btn" onclick="showCategory('clothing', this)">Clothing</button>
+    <button class="cat-btn" onclick="showCategory('electronics', this)">Electronics</button>
+    <button class="cat-btn" onclick="showCategory('shoes', this)">shoes</button>
+  </div>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+
+    <!-- Product 1: Clothing -->
+    <div class="product clothing">
+      <h2>Track Pant</h2>
+      <div class="slider">
+        <img src="image/pant 1.png" alt="Track Pant 1" class="slide active">
+        <img src="image/pant 2.png" alt="Track Pant 2" class="slide">
+        <img src="image/pant 3.png" alt="Track Pant 3" class="slide">
+      </div>
+      <button class="explore-btn" onclick="toggleProduct(this)">Explore Product</button>
+      <div class="details">
+        <p>Price: ₹299</p>
+        <p>High-quality track pant suitable for daily wear and sports.</p>
+        <p><strong>Sizes:</strong> S, M, L, XL, XXL</p>
+        <a href="https://wa.me/916000230461?text=I%20want%20to%20buy%20Track%20pant" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2: Cable -->
+    <div class="product electronics">
+      <h2>4 in 1 Cable</h2>
+      <div class="slider">
+        <img src="image/1.jpg" alt="Cable 1" class="slide active">
+        <img src="image/2.jpg" alt="Cable 2" class="slide">
+        <img src="image/3.jpg" alt="Cable 3" class="slide">
+        <img src="image/4.jpg" alt="Cable 4" class="slide">
+        <img src="image/5.jpg" alt="Cable 5" class="slide">
+        <img src="image/6.jpg" alt="Cable 6" class="slide">
+      </div>
+      <button class="explore-btn" onclick="toggleProduct(this)">Explore Product</button>
+      <div class="details">
+        <p>Price: ₹249</p>
+        <p>4 in 1 Cable | Gold Plated Ports | Ultra Fast Charging & Data Transfer</p>
+        <a href="https://wa.me/916000230461?text=I%20want%20to%20buy%204%20in%201%20Cable" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3: shoe -->
+    <div class="product shoes">
+      <h2>Clymb Sports Shoe</h2>
+      <div class="slider">
+        <img src="image/shoe 1.png" alt="Shoe 1" class="slide active">
+        <img src="image/shoe 2.png" alt="Shoe 2" class="slide">
+        <img src="image/shoe 3.png" alt="Shoe 3" class="slide">
+        <img src="image/shoe 3.png" alt="Shoe 4" class="slide">
+      </div>
+      <button class="explore-btn" onclick="toggleProduct(this)">Explore Product</button>
+      <div class="details">
+        <p>Price: ₹549</p>
+        <p>CLYMB SPORTS MESH UPPER WITH EVA SOLE
+            Material : Mesh
+            Sole Material : EVA
+            Fastening & Back Detail : Lace-Up
+            Pattern : Solid
+            Net Quantity (N) : 1
+            Sizes : 7,10,6,9,8</p>
+        <a href="https://wa.me/916000230461?text=I%20want%20to%20buy%2this%20shoe" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Buy All Button -->
+  <div class="buy-all">
+    <a href="https://wa.me/916000230461?text=I%20want%20to%20buy%20all%20products" class="btn btn-all">Buy All Products</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
